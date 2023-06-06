@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="productpage_all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="product-box">
+        <div class="all-images">
+        <div class="small-images">
+        <img src="img/pro--1.jpeg" onclick="clicking(this)">
+        <img src="img/pro--2.jpeg" onclick="clicking(this)"> 
+        <img src="img/pro--7.jpg" onclick="clicking(this)">
+        <img src="img/pro--4.jpg" onclick="clicking(this)">
+      </div>
+      <div class="main-images">
+        <img src="img/pro--4.jpg" id="imagebox">
+      </div>
+    </div>
+
+      <div class="text">
+        <div class="content">
+          <p class="brand">Brand : Kamiyala</p>
+          <h2>kamiyala best dress in India</h2>
+          <div class="review">
+            <span>(4.6)</span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="price-box">
+            <p class="price">&#8377;7700</p>
+            <strike>&#8377;8000</strike>
+          </div>
+          <p>Size : <select name="size">
+            <option value="select colour">select colour</option>
+            <option value="black">black</option>
+            <option value="pink">pink</option>
+          </select></p>
+          <p>Quantity <input type="text" value="1"></p>    
+          <button>
+            <span class="fa fa-shopping-cart"></span>
+            Add to cart
+          </button>
+          <button class="buy">
+            <span class="fa fa-shopping-cart"></span>
+            Buy now
+          </button>
+
+
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+
+<script>
+  function clicking(smallimg){
+    var fullimg = document.getElementById("imagebox");
+    fullimg.src = smallimg.src
+  }
+</script>
+
+</body>
+</html>
