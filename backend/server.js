@@ -13,6 +13,7 @@ const productRoutes = require('./routes/productRoutes');
 const razorpayRoutes = require('./routes/razorpayRoutes');
 const userRoutes = require('./routes/userRoutes');
 const orderRoutes = require('./routes/orderRoutes');
+const categoryRoutes = require('./routes/categoryRoutes');
 
 const app = express();
 
@@ -69,6 +70,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/razorpay', razorpayRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
+app.use('/api/categories', categoryRoutes);
 
 // Test route
 app.get('/api/test', (req, res) => {
